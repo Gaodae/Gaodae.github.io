@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Design for Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+<!--[if lte IE8]>
+    <p class="browserupgrade">你可以到<a herf="https://browsehappy.com/">这里</a>来更新你的浏览器,以获得最佳的体验</p>
+<![endif]-->
+<header>
+    <nav class="main">
+        <a href="index.html" class="logo"><img src="img/logo@2x.png" height="24px" alt="回到首页"></a>
+        <ul>
+            <li><a href="index.html">WORK</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+</header>
+<div class=container>
+    <section class="article-title">
+        <h1>交互自检清单V1.0</h1>
+        <span class="blog-label">学习笔记</span>
+        <p>2019.10.15 | 阅读需2分钟</p>
+    </section>
+    <section class="blog-content">
+        <h2>1. 前置条件</h2>
+            <ol>· 是否有账号分别</ol>
+            <ol>· 是否有权限分别</ol>
+        <br>
+        <h2>2. 内容</h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;2.1 显示机制</h3>
+                <ol>· 文字长度、特殊符号、敏感词限制</ol>
+                <ol>· 内容为空显示什么</ol>
+                <ol>· 数据计量单位是否不同</ol>
+                <ol>· 横竖屏问题</ol>
+                <ol>· 键盘弹出是否有问题</ol>
+                <ol>· 是否需要占位图</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;2.2 排序机制</h3>
+                <ol>· 页面内容按照哪些因素进行排序？</ol>
+                <ol>· 以什么方式进行展示？</ol>
+                <ol>· 翻页展示还是瀑布流？</ol>
+                <ol>· 一页显示多少条信息？</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;2.3 刷新机制</h3>
+                <ol>· 自动刷新还有手动刷新？</ol>
+                <ol>· 一次刷新多少条信息？</ol>
+                <ol>· 如何刷新更多？</ol>
+                <ol>· 当刷不出内容给提示了么？</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;2.3 缓存机制</h3>
+                <ol>· 这个页面要缓存哪些数据？</ol>
+                <ol>· 缓存到哪里？</ol>
+                <ol>· 清理缓存的机制是什么？</ol>
+                <ol>· 是定时自动清缓存还是让用户手动清理？</ol>
+        <br>
+        <h2>3. 控件</h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;3.1 退出机制</h3>
+                <ol>· 页面返回键</ol>
+                <ol>· home键</ol>
+                <ol>· 物理返回键</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;3.2 触发源</h3>
+                <ol>· 此控件的触发区是哪一部分？</ol>
+                <ol>· 是否有禁用状态？</ol>
+                <ol>· 需要频繁触发的控件，操作区域是否明确？</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;3.3 触发时</h3>
+                <ol>· 是否有加载状态？</ol>
+                <ol>· 控件颜色、样式是否改变？</ol>
+                <ol>· 是否有高亮？</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;3.4 触发后</h3>
+                <ol>· 操作进度显示</ol>
+                <ol>· 控件发生变化</ol>
+                <ol>· 结果显示</ol>
+                    <ol>&nbsp;&nbsp;&nbsp;&nbsp;a. 常见的提示类型：小红点提示，能自动消失的提示，页面上的文案提示，需要用户选择的弹出框</ol>
+                    <ol>&nbsp;&nbsp;&nbsp;&nbsp;b. 常见的结果类型：成功、失败、空值（搜索功能）</ol>
+        <br>
+        <h2>4. 异常情况</h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;4.1 异常操作</h3>
+                <ol>· 连续多次点击，是否给予反馈</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;4.2 网络状况</h3>
+                <ol>· 没网络时的提醒？是否需要网络超时？网络太慢，从wifi切换到2G/3G的提醒</ol>
+                <ol>· 网络加载状态</ol>
+                <ol>· 加载失败状态，是否有重新加载按钮</ol>
+                <ol>· 断网提示</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;4.3 账号相关</h3>
+                <ol>· 登录和未登录，对此按钮的操作权限是否有差别？如果必须在登录状态下才能操作，就要增加登录提醒</ol>
+                <ol>· 是否需要单点登录</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;4.4 数据相关</h3>
+                <ol>· 进入页面时，如果从服务器获取不到数据，是否需要内置默认图片？</ol>
+                <ol>· 没有内容时，是否有默认操作</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;4.5 版本相关</h3>
+                <ol>· 是否强制更新？是否显示版本更新显示</ol>
+                <ol>· 是否和旧版本兼容？</ol>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;4.6 其他</h3>
+                <ol>· 应用内文案是否需要做相对调整？</ol>
+                <ol>· 是否设置启动页、引导页和新手引导？</ol>
+                <ol>· 是否需要进行埋点，以便分析用户行为？</ol>
+                <ol>· 消息推送的策略是什么？调用系统通知还是用第三方？</ol>
+                <ol>· 需要硬件交互么？需要请求GPS，相机需要使用权限么？</ol>
+    </section>
+    <div class="more-posts">
+        <div class="pre">
+            <div class="icon">
+                <img src="#" alt="前">
+            </div>
+            <h3 class="name">/</h3>
+            <p class="pre">没有上一篇</p>
+        </div>
+
+        <a href="blogDs.html">
+        <div class="next">
+            <div class="icon">
+                    <img src="#" alt="后">
+            </div>
+            <h3 class="name">如何在业务推进的过程中建立设计系统</h3>
+            <p class="pre">下一篇</p>
+        </div>
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2019 Gaomengyun All rights reserved.</p>
+</footer>
+

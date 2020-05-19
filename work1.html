@@ -7,6 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <style>
+        .header {
+            color: rgb(243, 152, 6);
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 20px;
+        }
+        .footer {
+            position: fixed;
+            right: 50px;
+            bottom: 18px;
+            width: 32px;
+            height: 32px;
+        }
+    </style>
 </head>
 <body>
 <!--[if lte IE8]>
@@ -29,54 +47,58 @@
         <p>产品设计、交互设计、用户研究、视觉设计</p>
     </section>
     <section class="content">
-        <p>三节课是一所专注于“能力提升”的互联网人在线大学。提供体系化的线上课程与教学服务，为职场人提供可以立刻复用的方法和技能。解决“做不到”到“做到”的难题。</p>
-        <p>在业务变化很快的互联网公司中，员工需要不断的学习新知识，可是有些知识运用到实际工作中却会“水土不服”。为了将知识转化为能力，三节课做了很多行业研究，将每个岗位所需要的能力转化成相应的知识点+实践项目，帮助职场人更好的学习。</p>
-        <img src="img/work-sjk/sjk-f1.jpg" width="100%">
-        <img src="img/work-sjk/bzr-f1.jpg" width="100%">
-        <p>如果你不了解三节课，那么先让我帮你介绍一下三节课的学习模式。如果你不感兴趣，可以直接跳到下一个模块。</p>
-        <h1>三节课学习模式的五大特色</h1>
-        <h2>1、基于能力模型搭建课程体系</h2>
-        <img src="img/work-sjk/sjk-f2.jpg" width="100%">
-        <h2>2、沉浸式学习系统</h2>
-        <p>三节课的学习系统可以支持学员学习图文材料、视频讲解和作业的提交。<br>
-            学习模式分为目录模式和笔记模式，分别对应不同的学习场景。</p>
-        <img src="img/work-sjk/sjk-f3.jpg" width="100%">
-        <h2>3、章节分割清晰。细致的颗粒度，增加用户对于课程的掌控感</h2>
-        <img src="img/work-sjk/sjk-f4.jpg" width="100%">
-        <h2>4、与课程匹配的作业，通过产出深化学习效果</h2>
-        <p>用户提交作业后，助教会及时做出批改，并给予你答案中存在的问题提出客观建议。<br>
-           在作业交流区中可以看到大量其他学员提交的作业，以及助教在底部的点评。可以翻阅别人的解题思路，改进迭代自己的作业，还能与同学进行互动和交流。</p>
-        <h2>5、学习社群延展，班主任辅导</h2>
-        <p>每个训练营都有一个带班“班主任”，他（她）会全程陪伴，组织学员在群内讨论、交流。也会在学员要掉队的时候拉他们一把。这项服务是围绕微信群展开的。</p>
-        <h1>三节课学习系统重构</h1>
-        <p>PC端学习系统经过2年的迭代优化，不论是数据统计还是性能效率都存在了一些问题。我们在2018年底开启了学习系统重构的项目。从PC交付向APP+PC交付转移，最终实现全场景的学习，帮助用户更高效率、更高效果的完成学习。从以课程为中心的交付向以人为中心的伺服式学习，实现一本教材的个性化教学。</p>
+        <img src="img/work-ss/ss1-min.jpg" width="100%">
+        <img src="img/work-ss/ss2-min.jpg" width="100%">
+        <img src="img/work-ss/ss3-min.jpg" width="100%">
     </section>
+    <img class="footer" id="gotoTop" src="img/gotoTop.png" alt="">
+        <script>
+            function gotoTop(minHeight){
+    
+                // 定义点击返回顶部图标后向上滚动的动画
+                $("#gotoTop").click(
+                    function(){$('html,body').animate({scrollTop:'0px'},'slow');
+                })
+    
+                // 获取页面的最小高度，无传入值则默认为600像素
+                minHeight? minHeight = minHeight:minHeight = 600;
+    
+                // 为窗口的scroll事件绑定处理函数
+                $(window).scroll(function(){
+    
+                    // 获取窗口的滚动条的垂直滚动距离
+                    var s = $(window).scrollTop();
+    
+                    // 当窗口的滚动条的垂直距离大于页面的最小高度时，让返回顶部图标渐现，否则渐隐
+                    if( s > minHeight){
+                        $("#gotoTop").fadeIn(500);
+                    }else{
+                        $("#gotoTop").fadeOut(500);
+                    };
+                });
+            };
+            gotoTop();
+        </script>
 </div>
-<div class=container>
-    <section class="work-list">
-        <h2>更多作品</h2>
-        <div class="project-cover">
-            <a href="#">
-            <span class="field">产品从0到1 x 增长产品</span>
-            <h1>小实习-互联网大厂在线实习</h1>
-            <p>交互设计、视觉设计、增长方案</p>
-            </a>
+<div class="more-posts">
+    <li class="page-prev">
+    <div class="pre">
+        <div class="icon">
+            <img src="img/blogin/pre.png" width="40px" height="40px" alt="前">
         </div>
-        <div class="project-cover">
-            <a href="#">
-            <span class="field">中台产品</span>
-            <h1>班主任效率平台</h1>
-            <p>交互设计、视觉设计、设计规范</p>
-            </a>
+        <span class="text">上一篇 - 没有咯~</span>
+    </div>
+    </li>
+    <li class="page-next"></li>
+    <a href="work-bb.html">
+    <div class="next">
+        <div class="icon">
+            <img src="img/blogin/next.png" width="40px" height="40px" alt="后">
         </div>
-        <div class="project-cover">
-            <a href="#">
-            <span class="field">产品从0到1 x 产品从1到0</span>
-            <h1>B端Saas企业大学</h1>
-            <p>交互设计、视觉设计</p>
-            </a>
-        </div>
-    </section>
+        <span class="text">下一篇 - 在线实习小程序</span>
+    </div>
+    </a>
+    </li>
 </div>
 
 <footer>

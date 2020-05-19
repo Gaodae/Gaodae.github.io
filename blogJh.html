@@ -12,6 +12,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <style>
+        .header {
+            color: rgb(243, 152, 6);
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 20px;
+        }
+        .footer {
+            position: fixed;
+            right: 50px;
+            bottom: 18px;
+            width: 32px;
+            height: 32px;
+        }
+    </style>
 </head>
 <body>
 <!--[if lte IE8]>
@@ -31,7 +49,7 @@
     <section class="article-title">
         <h1>交互自检清单V1.0</h1>
         <span class="blog-label">学习笔记</span>
-        <p>2019.10.15 | 阅读需2分钟</p>
+        <p class="aa">2019.10.15 | 阅读需2分钟</p>
     </section>
     <section class="blog-content">
         <h2>1. 前置条件</h2>
@@ -106,6 +124,34 @@
                 <ol>· 消息推送的策略是什么？调用系统通知还是用第三方？</ol>
                 <ol>· 需要硬件交互么？需要请求GPS，相机需要使用权限么？</ol>
     </section>
+    <img class="footer" id="gotoTop" src="img/gotoTop.png" alt="">
+        <script>
+            function gotoTop(minHeight){
+    
+                // 定义点击返回顶部图标后向上滚动的动画
+                $("#gotoTop").click(
+                    function(){$('html,body').animate({scrollTop:'0px'},'slow');
+                })
+    
+                // 获取页面的最小高度，无传入值则默认为600像素
+                minHeight? minHeight = minHeight:minHeight = 600;
+    
+                // 为窗口的scroll事件绑定处理函数
+                $(window).scroll(function(){
+    
+                    // 获取窗口的滚动条的垂直滚动距离
+                    var s = $(window).scrollTop();
+    
+                    // 当窗口的滚动条的垂直距离大于页面的最小高度时，让返回顶部图标渐现，否则渐隐
+                    if( s > minHeight){
+                        $("#gotoTop").fadeIn(500);
+                    }else{
+                        $("#gotoTop").fadeOut(500);
+                    };
+                });
+            };
+            gotoTop();
+        </script>
     <div class="more-posts">
         <li class="page-prev">
         <div class="pre">

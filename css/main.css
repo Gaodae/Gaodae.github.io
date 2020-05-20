@@ -191,17 +191,17 @@ header .main ul li a{
     width: calc(33.33333333% - 3rem);
     height:340px;
     border-radius: 8px;
-    background: #101113;
-    color: #fff;
+    background: #ffffff;
+    color: #101113;
     margin: 1.33rem;
     position: relative;
-    box-shadow: 0px 4px 12px #E5E5E5;
+    box-shadow: 0px 0px 1px #eee;
 }
 
 .container .work-list .project-cover .field{
     display: inline-block;
     position: absolute;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-weight: 300;
     top: 2rem;
     left: 1.5rem;
@@ -211,8 +211,8 @@ header .main ul li a{
     display: inline-block;
     float: left;
     position: absolute;
-    color: #fff;
-    font-weight: 400;
+    color: #101113;
+    font-weight: 00;
     top: 3rem;
     left: 1.5rem;
 }
@@ -220,10 +220,10 @@ header .main ul li a{
 .container .work-list .project-cover p{
     display: inline-block;
     position: absolute;
-    border: 0.5px solid rgb(255, 255, 255,.3);
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 0.5rem 1rem;
-    color: #fff;
+    color: #101113;
     font-weight: 500;
     top: 21rem;
     left: 1.5rem;
@@ -233,9 +233,23 @@ header .main ul li a{
 }
 
 a.works:hover .project-cover{ 
-    background-color: rgb(42, 42, 44);
+    background-color: #101113;
     transition: all 0.3s ease-in-out;
-    transform: translateY(-6px)
+    transform: translateY(-6px);
+    box-shadow: 0px 4px 20px #ddd;
+}
+
+a.works:hover .project-cover p{ 
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+a.works:hover .project-cover h1{ 
+    color: #ffffff;
+}
+
+.works:hover .project-cover .field{  
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -278,7 +292,7 @@ a.works:hover .project-cover{
     background: #fff;
     margin: 1.3rem;
     position: relative;
-    border:1px solid #eee; ;
+    border:1px solid #eee; 
 }
 
 .container .blog-list .blog-cover h2{
@@ -317,6 +331,20 @@ a.works:hover .project-cover{
 a.bloghover:hover .blog-cover{ 
     box-shadow: 0px 4px 20px #ddd;
     transition: all 0.3s ease-in-out;
+    background: #101113;
+}
+
+a.bloghover:hover .blog-cover h2{ 
+    color: #fff;
+}
+
+a.bloghover:hover .blog-cover .blog-label{ 
+    background: #ffffff49;
+    color: #fff;
+}
+
+a.bloghover:hover .blog-cover p{ 
+    color: #999999;
 }
 
 @media only screen and (max-width: 40em){

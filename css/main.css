@@ -430,6 +430,17 @@ a.bloghover:hover .blog-cover{
         font-size: 2rem;
         font-weight: 500;
     }
+
+    .container .info{
+        display: inline-block;
+        width: 90%;
+        margin: 1rem 2rem;
+    }
+
+    .container .info .content {
+        display: inline-block;
+        width: 100%; 
+    }
     
     .container .foto{
         display: none;
@@ -446,29 +457,39 @@ a.bloghover:hover .blog-cover{
     position: relative;
 }
 
-.work-container .intro{
-    width: 1200px;
-    height: 12rem;
-    background: #fff;
-    box-shadow: 0 0.5rem 10rem rgb(0, 0, 0, 0.1); 
-    margin-left: -600px;
+.work-container .work-title{
     box-sizing: border-box;
-    padding: 2rem 6rem;
-    position: absolute;
-    top: 6rem;
-    left: 50%;
+    color: #fff;
+    padding: 2rem 80px;
+    width: 100%;
+    height: 16rem;
+    background: #101113;
+    margin: 0 auto;
 }
 
-.work-container .banner{
-    background: #101113;
-    height: 12rem;
+.work-container .work-title ul{
+    text-align: left;
+}
+
+.work-container .work-title ul li{
+    display: inline-block;
+    line-height: 2rem;
+    border: 0.5px solid rgb(255, 255, 255,.3);
+    border-radius: 4px;
+    padding: 0.1rem 1rem;
+    margin-right: 0.2rem;
+}
+
+.work-container .work-title .aa{
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2.5rem;
 }
 
 .work-container .content{
     width: 1200px;
     background: #fff;
     margin: 0 auto ;
-    padding: 120px 0 0 0;
+    padding: 2rem 0 0 0;
 }
 
 .work-container .content p{
@@ -499,12 +520,24 @@ a.bloghover:hover .blog-cover{
 }
 
 @media only screen and (max-width: 40em){
+    
+    .work-container .work-title{
+        box-sizing: border-box;
+        color: #fff;
+        padding: 1rem 20px;
+        width: 100%;
+        height: 15rem;
+        background: #101113;
+        margin: 0 auto;
+    }
+    
+    
     .work-container .content{
         width: 100%;
         display: inline-block;
         background: #fff;
         margin: 0 auto ;
-        padding: 6rem 0 0 0;
+        padding: 2rem 0 0 0;
     }
 
     .more-posts{
@@ -515,6 +548,11 @@ a.bloghover:hover .blog-cover{
         background: #f2f2f2;
         margin: 0 auto;
     }
+
+    .more-posts span{
+        display: none;
+    }
+
 
 }
 
@@ -584,6 +622,40 @@ a.bloghover:hover .blog-cover{
     float: right;
     line-height: 24px;
 }
+
+@media only screen and (max-width: 40em){
+    
+    .container .article-title{
+        box-sizing: border-box;
+        color: #fff;
+        padding: 1rem 2rem;
+        width: 100%;
+        height: 15rem;
+        background: #101113;
+        margin: 0 auto;
+    }
+    
+    
+    .container .blog-content{
+        width: 100%;
+        display: block;
+        background: #fff;
+        margin: 0 auto ;
+        padding: 2rem;
+    }
+
+    .container .more-posts{
+        box-sizing: border-box;
+        padding: 2.5rem 1.5rem 3rem 1.5rem;
+        width: 100%;
+        height: 10rem;
+        background: #f2f2f2;
+        margin: 0 auto;
+    }
+
+    .container .more-posts span{
+        display: none;
+    }
     
 
 /* 底部导航 */

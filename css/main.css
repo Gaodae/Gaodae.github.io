@@ -112,9 +112,7 @@ a{
 }
 
 a:hover, a:active{
-    color: #000;
-    font-weight: 500;
-    text-decoration: underline;
+    cursor:pointer
 }
 
 /* 网站头部 */
@@ -186,7 +184,7 @@ header .main ul li a{
     left: 1.5rem;
 }
 
-.container .work-list .project-cover h2{
+.container .work-list .project-cover h1{
     display: inline-block;
     float: left;
     position: absolute;
@@ -211,6 +209,12 @@ header .main ul li a{
     float: left;
 }
 
+a.works:hover .project-cover{ 
+    background-color: rgb(42, 42, 44);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-6px)
+}
+
 
 /* BLOG页主要内容 */
 .container .blog-list{
@@ -226,7 +230,7 @@ header .main ul li a{
     background: #fff;
     margin: 1.3rem;
     position: relative;
-    box-shadow: 0px 4px 12px #E5E5E5;
+    border:1px solid #eee; ;
 }
 
 .container .blog-list .blog-cover h2{
@@ -260,6 +264,11 @@ header .main ul li a{
     left: 1.5rem;
     color: #666;
     font-weight: 300;
+}
+
+a.bloghover:hover .blog-cover{ 
+    box-shadow: 0px 4px 20px #ddd;
+    transition: all 0.3s ease-in-out;
 }
 
 /* ABOUT页主要内容 */

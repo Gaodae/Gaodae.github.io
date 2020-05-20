@@ -186,7 +186,7 @@ header .main ul li a{
     left: 1.5rem;
 }
 
-.container .work-list .project-cover h1{
+.container .work-list .project-cover h2{
     display: inline-block;
     float: left;
     position: absolute;
@@ -428,7 +428,7 @@ header .main ul li a{
     box-sizing: border-box;
     width: 960px;
     background: #fff;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto ;
     padding: 40px 80px;
 }
 

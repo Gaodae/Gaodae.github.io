@@ -140,16 +140,39 @@ header .main ul{
 
 header .main ul li{
     display: inline-block;
+    line-height: 6rem;
 }
 
 header .main ul li a{
     display: inline-block;
-    padding: 0 0 0 4rem;
-    line-height: 6rem;
+    padding: 0 2rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: #303133;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 40em){
+    header .main .logo{
+        width: 100%;
+        padding: 1.5rem 0 0.5rem;
+        text-align: center;
+    }
+    
+    header .main ul{
+        text-align: center;
+    }
+
+    header .main ul li{
+        line-height: 4rem;
+    }
+
+    header .main ul li a{
+        padding: 0 1.5rem;
+        font-size: 300;
+    }
+
+
 }
 
 /* WORK页主要内容 */
@@ -216,6 +239,31 @@ a.works:hover .project-cover{
 }
 
 
+@media only screen and (max-width: 40em){
+    .container .work-list .project-cover{
+        display: block;
+        width: auto;
+        height:200px;
+        margin: 1rem;
+        font-size: 12px;
+    }
+
+    .container .work-list{
+        margin: 1rem auto 10rem auto;
+    }
+
+    .container .work-list .project-cover h1{
+        font-size: 1.8rem;
+    }
+
+    .container .work-list .project-cover p{
+        font-weight: 400;
+        top: 11rem;
+    }
+
+}
+
+
 /* BLOG页主要内容 */
 .container .blog-list{
     max-width: 1200px;
@@ -269,6 +317,25 @@ a.works:hover .project-cover{
 a.bloghover:hover .blog-cover{ 
     box-shadow: 0px 4px 20px #ddd;
     transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 40em){
+    .container .blog-list .blog-cover{
+        display: block;
+        width: auto;
+        height: 160px;
+        margin: 1rem;
+        font-size: 12px;
+    }
+
+    .container .blog-list{
+        margin: 1rem auto 10rem auto;
+    }
+
+    .container .blog-list .blog-cover h2{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
 }
 
 /* ABOUT页主要内容 */
@@ -340,6 +407,38 @@ a.bloghover:hover .blog-cover{
     background: #111;
 }
 
+
+@media only screen and (max-width: 40em){
+    .container .about-banner{
+        height: 14rem;
+        background: #101113;
+        color: #fff;
+    }
+
+    .container .about-banner p{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 3rem 0 1rem 0;
+    }
+
+    .container .about-banner .myname{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .container .foto{
+        display: none;
+    }
+
+}
+
+
+
 /* WORK内页主要内容 */
 
 .work-container{
@@ -359,6 +458,7 @@ a.bloghover:hover .blog-cover{
     top: 6rem;
     left: 50%;
 }
+
 .work-container .banner{
     background: #101113;
     height: 12rem;
@@ -369,10 +469,6 @@ a.bloghover:hover .blog-cover{
     background: #fff;
     margin: 0 auto ;
     padding: 120px 0 0 0;
-}
-
-.work-container .work-list h2{
-    margin-left: 1.33rem;
 }
 
 .work-container .content p{
@@ -400,6 +496,26 @@ a.bloghover:hover .blog-cover{
     text-align: right;
     float: right;
     line-height: 24px;
+}
+
+@media only screen and (max-width: 40em){
+    .work-container .content{
+        width: 100%;
+        display: inline-block;
+        background: #fff;
+        margin: 0 auto ;
+        padding: 6rem 0 0 0;
+    }
+
+    .more-posts{
+        box-sizing: border-box;
+        padding: 2.5rem 1.5rem 3rem 1.5rem;
+        width: 100%;
+        height: 10rem;
+        background: #f2f2f2;
+        margin: 0 auto;
+    }
+
 }
 
 /* BLOG内页主要内容 */

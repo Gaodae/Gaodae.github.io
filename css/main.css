@@ -684,12 +684,11 @@ a.bloghover:hover .blog-cover p{
     .container .more-posts span{
         display: none;
     }
-    
+} 
 
 /* 底部导航 */
 
 footer{
-    width: 100%;
     background: #101113;
     padding: 0.2rem;
     flex: 0 0 auto;

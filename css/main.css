@@ -140,13 +140,13 @@ header .main ul{
 
 header .main ul li{
     display: inline-block;
-    line-height: 6rem;
+    line-height: 7rem;
 }
 
 header .main ul li a{
     display: inline-block;
     padding: 0 2rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #303133;
     text-decoration: none;
@@ -189,7 +189,7 @@ header .main ul li a{
 .container .work-list .project-cover{
     display: inline-block;
     width: calc(33.33333333% - 3rem);
-    height:340px;
+    height:27.5rem;
     border-radius: 8px;
     background: #ffffff;
     color: #101113;
@@ -203,8 +203,8 @@ header .main ul li a{
     position: absolute;
     color: rgba(0, 0, 0, 0.7);
     font-weight: 300;
-    top: 2rem;
-    left: 1.5rem;
+    top: 2.5rem;
+    left: 2rem;
 }
 
 .container .work-list .project-cover h1{
@@ -212,9 +212,9 @@ header .main ul li a{
     float: left;
     position: absolute;
     color: #101113;
-    font-weight: 00;
-    top: 3rem;
-    left: 1.5rem;
+    font-weight: 500;
+    top: 3.5rem;
+    left: 2rem;
 }
 
 .container .work-list .project-cover p{
@@ -226,7 +226,7 @@ header .main ul li a{
     color: #101113;
     font-weight: 500;
     top: 21rem;
-    left: 1.5rem;
+    left: 2rem;
     font-size: 12px;
     line-height: 12px;
     float: left;
@@ -286,21 +286,21 @@ a.works:hover .project-cover h1{
 
 .container .blog-list .blog-cover{
     display: inline-block;
-    width: calc(33.33333333% - 3rem);
+    width: calc(33.33333333% - 3.1rem);
     border-radius: 8px;
-    height: 13rem;
+    height: 16.5rem;
     background: #fff;
     margin: 1.3rem;
     position: relative;
     border:1px solid #eee; 
 }
 
-.container .blog-list .blog-cover h2{
+.container .blog-list .blog-cover h1{
     display: inline-block;
     float: left;
     position: absolute;
-    top: 1.6rem;
-    left: 1.5rem;
+    top: 2rem;
+    left: 2rem;
     padding-right: 1.5rem;
     margin: 0;
 }
@@ -310,8 +310,8 @@ a.works:hover .project-cover h1{
     position: absolute;
     background: #eee;
     color: #303133;
-    top: 7.3rem;
-    left: 1.5rem;
+    top: 9rem;
+    left: 2rem;
     font-weight: 500;
     padding: 0.5rem 1rem;
     font-size: 12px;
@@ -322,8 +322,8 @@ a.works:hover .project-cover h1{
 .container .blog-list .blog-cover p{
     display: inline-block;
     position: absolute;
-    top: 9.3rem;
-    left: 1.5rem;
+    top: 11.5rem;
+    left: 2rem;
     color: #666;
     font-weight: 300;
 }
@@ -334,7 +334,7 @@ a.bloghover:hover .blog-cover{
     background: #101113;
 }
 
-a.bloghover:hover .blog-cover h2{ 
+a.bloghover:hover .blog-cover h1{ 
     color: #fff;
 }
 
@@ -404,7 +404,7 @@ a.bloghover:hover .blog-cover p{
 
 .container .info .content{
     display: inline-block;
-    width: 62rem;
+    width: 80rem;
 }
 
 .container .info .content .m{
@@ -416,7 +416,7 @@ a.bloghover:hover .blog-cover p{
 .container .info .content p{
     line-height: 2.5;
     color: #666;
-    font-size: 1.17rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin: 1rem 0;
 }
@@ -490,7 +490,7 @@ a.bloghover:hover .blog-cover p{
     color: #fff;
     padding: 2rem 80px;
     width: 100%;
-    height: 16rem;
+    height: 18rem;
     background: #101113;
     margin: 0 auto;
 }
@@ -528,9 +528,9 @@ a.bloghover:hover .blog-cover p{
 
 .more-posts{
     box-sizing: border-box;
-    padding: 2.5rem 220px 3rem 220px;
+    padding: 2rem 12rem;
     width: 100%;
-    height: 10rem;
+    height: 11rem;
     background: #f2f2f2;
     margin: 0 auto;
 }
@@ -570,9 +570,9 @@ a.bloghover:hover .blog-cover p{
 
     .more-posts{
         box-sizing: border-box;
-        padding: 2.5rem 1.5rem 3rem 1.5rem;
+        padding: 2rem;
         width: 100%;
-        height: 10rem;
+        height: 8rem;
         background: #f2f2f2;
         margin: 0 auto;
     }
@@ -595,7 +595,7 @@ a.bloghover:hover .blog-cover p{
     color: #fff;
     padding: 2rem 80px;
     width: 960px;
-    height: 14rem;
+    height: 15rem;
     background: #101113;
     margin: 0 auto;
 }
@@ -632,10 +632,10 @@ a.bloghover:hover .blog-cover p{
 
 .container .more-posts{
     box-sizing: border-box;
-    padding: 2.5rem 220px 3rem 220px;
+    padding: 2rem 12rem;
     width: 100%;
-    height: 10rem;
-    background: #eaeaea;
+    height: 11rem;
+    background: #f2f2f2;
     margin: 0 auto;
 }
 
@@ -674,7 +674,7 @@ a.bloghover:hover .blog-cover p{
 
     .container .more-posts{
         box-sizing: border-box;
-        padding: 2.5rem 1.5rem 3rem 1.5rem;
+        padding: 2rem;
         width: 100%;
         height: 10rem;
         background: #f2f2f2;
@@ -692,9 +692,9 @@ footer{
     background: #101113;
     padding: 0.2rem;
     flex: 0 0 auto;
-    line-height: 3rem;
+    line-height: 4rem;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     text-align: center;
 }
